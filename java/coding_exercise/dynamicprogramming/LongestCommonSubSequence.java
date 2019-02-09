@@ -1,4 +1,4 @@
-package pradpk.coding.dynamicprogramming;
+package dynamicprogramming;
 
 public class LongestCommonSubSequence {
 
