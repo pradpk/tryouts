@@ -4,7 +4,6 @@
 
 def bubble(arr):
 	for i in range(len(arr)-1, -1, -1):
-		print(arr)
 		for j in range(i+1):
 			if j+1<len(arr) and arr[j] > arr[j+1]:
 				tmp = arr[j+1]
