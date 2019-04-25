@@ -1,6 +1,7 @@
 #Bubble sort is very slow (O(n^2)), but simplest of the sorting.
 #Rule
-#For below list, it will take elements from index 0 (7 from below) and place it in right position
+#For below list, it will take elements from index 0 and 1, if the order is not right, swaps them.
+#Above step continues till it pushes the index 0 to the right place. In below case, 7 will be moved to rightmost place.
 
 def bubble(arr):
 	for i in range(len(arr)-1, -1, -1):
