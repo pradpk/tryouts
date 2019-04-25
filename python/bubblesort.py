@@ -2,6 +2,7 @@
 #Rule
 #For below list, it will take elements from index 0 and 1, if the order is not right, swaps them.
 #Above step continues till it pushes the index 0 to the right place. In below case, 7 will be moved to rightmost place.
+#Since the rightmost element is sorted, it will not be considered in next sort operation.
 
 def bubble(arr):
 	for i in range(len(arr)-1, -1, -1):
