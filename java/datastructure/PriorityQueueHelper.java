@@ -1,6 +1,9 @@
 import java.util.*;
 
-
+/**
+PriorityQueue is an implement of Queue which can be used to store and retrieve sorted sequence of elements.
+It is ideal to use PriorityQueue data structure to store and retrieve job schedulers based on priorities.
+*/
 public class PriorityQueueHelper {
 
   public static void main(String[] a) {
