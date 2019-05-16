@@ -19,9 +19,11 @@ public class LinkedListHelper {
 			list.offer(i);
 		}
 		
+		System.out.print("Queue way : ");
 		while(!list.isEmpty()) {
 			System.out.print(list.poll() + "\t");
 		}
+		System.out.println();
 	}
 	
 	private static void useAsStack() {
@@ -30,6 +32,7 @@ public class LinkedListHelper {
 			list.offer(i);
 		}
 		
+		System.out.print("Stack way : ");
 		while(!list.isEmpty()) {
 			System.out.print(list.pollLast() + "\t");
 		}		
