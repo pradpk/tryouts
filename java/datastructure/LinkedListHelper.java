@@ -9,7 +9,8 @@ Stack is LIFO (Last In First Out)
 public class LinkedListHelper {
 	
 	public static void main(String[] a) {
-		usePriorityQueue();
+		useAsQueue();
+		useAsStack();
 	}
 	
 	private static void useAsQueue() {
