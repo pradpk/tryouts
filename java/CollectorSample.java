@@ -38,8 +38,7 @@ public class CollectorSample {
      * @param studentList
      */
     private static void printCountOfStudentAges(List<Student> studentList) {
-        List<Student> tempStudentListCopy = new ArrayList<>(studentList);
-        System.out.println("printCountOfStudentAges : " + tempStudentListCopy.stream().collect(Collectors.groupingBy(Student::getAge, Collectors.counting())));
+        studentList.stream().collect(Collectors.groupingBy(Student::getAge, Collectors.counting())).forEach((k, v) -> System.out.print(k + " = " + v + ", "));
     }
 
     /**
@@ -47,8 +46,7 @@ public class CollectorSample {
      * @param studentList
      */
     private static void printCountOfStudentAgesByPredicate(List<Student> studentList) {
-        List<Student> tempStudentListCopy = new ArrayList<>(studentList);
-        tempStudentListCopy.stream()
+        studentList.stream()
                 .collect(Collectors.partitioningBy(s -> s.getAge() > 18, Collectors.counting()))
                 .forEach((key, val) -> System.out.print(key + " " + val + " "));
     }
